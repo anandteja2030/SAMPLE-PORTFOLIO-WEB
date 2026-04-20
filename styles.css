@@ -23,13 +23,29 @@ body {
     z-index: 1000;
 }
 
-.navbar a {
+.navbar h2 {
+    color: #2193F6;
+}
+
+/* NAV LINKS IMPROVED */
+.nav-links a {
     margin-left: 20px;
     text-decoration: none;
     color: #333;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 500;
 }
 
-/* HERO */
+.nav-links a:hover {
+    background: #2193F6;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* MY PIC*/
 .hero {
     height: 100vh;
     display: flex;
@@ -55,6 +71,12 @@ body {
     color: #2193F6;
     text-decoration: none;
     border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0d68c8;
+    color: white;
 }
 
 /* SECTION */
@@ -87,6 +109,7 @@ body {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .skill {
@@ -94,6 +117,13 @@ body {
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
+    transition: 0.3s;
+    width: calc(23% - 10px);
+}
+
+.skill:hover {
+    background: #0d68c8;
+    transform: scale(1.05);
 }
 
 /* PROJECTS */
@@ -121,6 +151,11 @@ body {
     margin-top: 10px;
     color: #2193F6;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    text-decoration: underline;
 }
 
 /* CONTACT */
@@ -134,6 +169,14 @@ body {
 .contact-form textarea {
     margin: 10px 0;
     padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #2193F6;
 }
 
 .contact-form button {
@@ -141,6 +184,12 @@ body {
     background: #2193F6;
     color: white;
     border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #0d68c8;
 }
 
 /* FOOTER */
@@ -155,6 +204,11 @@ footer {
     color: white;
     margin: 10px;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    color: #2193F6;
 }
 
 /* RESPONSIVE */
@@ -170,5 +224,9 @@ footer {
     .navbar {
         flex-direction: column;
         align-items: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
     }
 }
