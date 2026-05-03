@@ -185,6 +185,9 @@ index.html
 
 ---
 
+## 🌐 WEB LINK
+* https://anandteja2030.github.io/SAMPLE-PORTFOLIO-WEB/
+
 ## 💡 Key Learnings
 
 * Structuring a real portfolio layout
